@@ -1,1 +1,1 @@
-# -seoeunnn-.github.io
+# seoeunnn.github.io
