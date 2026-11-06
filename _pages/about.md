@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About Me"
+classes: [about-page]
 ---
 
 안녕하세요! 컴퓨터공학과에 재학 중이며 사이버보안학과를 복수전공하고 있는 장서은입니다.

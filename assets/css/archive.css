@@ -42,6 +42,8 @@ h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title,
    In particular, do not change .author__bio or its paragraph's width/spacing. */
 a, a:visited { color: var(--archive-accent); }
 h1, h2, h3, h4, h5, h6 { color: var(--archive-heading); }
+.sidebar .author__name, .sidebar .author__name a,
+.about-page .page__title { color: var(--archive-text); }
 a { text-decoration-color: var(--archive-accent); text-underline-offset: .2em; }
 a:hover { text-decoration: underline; text-decoration-color: var(--archive-accent); }
 a:focus-visible, button:focus-visible, input:focus-visible, label:focus-visible {
