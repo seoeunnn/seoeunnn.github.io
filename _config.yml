@@ -59,24 +59,21 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "보안 전문가가 되고 싶은 감자 🥔"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/seoeunnn"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -89,6 +86,8 @@ defaults:
       sidebar:
         nav: "sidebar-category"
       read_time: true
+      show_date: true
+      date_format: "%Y.%m.%d"
       comments: true
       share: true
       related: true
@@ -99,6 +98,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "sidebar-category"
 
 category_archive:
   type: liquid

@@ -1,0 +1,53 @@
+---
+layout: null
+permalink: /font-comparison/
+sitemap: false
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>폰트 비교 · 5e0eun.log</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css">
+  <link rel="stylesheet" href="{{ '/assets/css/font-comparison.css' | relative_url }}">
+  <script src="{{ '/assets/js/font-comparison.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <header>
+    <h1>5e0eun.log 폰트 비교</h1>
+    <p>같은 색상·레이아웃·크기·간격에 폰트만 바꿨습니다. 실제 블로그에는 아직 적용하지 않았습니다.</p>
+    <form id="preview-controls">
+      <label>폰트 조합
+        <select id="font-variant" name="variant">
+          <option value="a">A · Wanted Sans / Wanted Sans</option>
+          <option value="b">B · LINE Seed Sans KR / Pretendard</option>
+          <option value="c">C · Gmarket Sans / SUIT</option>
+          <option value="d">D · SUIT / SUIT</option>
+        </select>
+      </label>
+      <label>화면 너비
+        <select id="preview-width" name="width">
+          <option value="desktop">데스크톱 · 현재 창 너비</option>
+          <option value="390">모바일 · 390px</option>
+          <option value="360">모바일 · 360px</option>
+        </select>
+      </label>
+      <a id="open-preview" href="{{ '/font-preview/a/' | relative_url }}" target="_blank" rel="noopener">시안 새 탭에서 보기</a>
+      <a href="{{ '/' | relative_url }}">기존 블로그 보기</a>
+    </form>
+    <p id="preview-label" aria-live="polite">A · Wanted Sans / Wanted Sans</p>
+    <details>
+      <summary>비교할 부분과 폰트 출처</summary>
+      <p>혼합 제목의 한영 균형, 카테고리의 식별성, 긴 본문의 읽기 편함, 날짜와 숫자, 모바일 줄바꿈을 비교해 보세요. 코드는 JetBrains Mono로 고정했습니다.</p>
+      <p>Gmarket Sans와 LINE Seed는 제공하는 실제 굵기 중 가장 가까운 굵기를 사용합니다. 폰트마다 글자 폭이 달라 줄바꿈은 자연스럽게 달라질 수 있습니다.</p>
+      <p>출처: <a href="https://github.com/wanteddev/wanted-sans">Wanted Sans</a> · <a href="https://seed.line.me/index_kr.html">LINE Seed</a> · <a href="https://corp.gmarket.com/fonts/">Gmarket Sans</a> · <a href="https://github.com/sun-typeface/SUIT">SUIT</a> · <a href="https://github.com/orioncactus/pretendard">Pretendard</a></p>
+    </details>
+    <noscript><p>직접 열기: <a href="{{ '/font-preview/a/' | relative_url }}">A</a> · <a href="{{ '/font-preview/b/' | relative_url }}">B</a> · <a href="{{ '/font-preview/c/' | relative_url }}">C</a> · <a href="{{ '/font-preview/d/' | relative_url }}">D</a></p></noscript>
+  </header>
+  <main>
+    <iframe id="font-preview" src="{{ '/font-preview/a/' | relative_url }}" title="A 폰트 시안" data-preview-root="{{ '/font-preview/' | relative_url }}"></iframe>
+  </main>
+</body>
+</html>

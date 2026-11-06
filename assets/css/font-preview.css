@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Gmarket Sans';
+  src: url('https://script.gmarket.com/fonts/GmarketSansMedium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Gmarket Sans';
+  src: url('https://script.gmarket.com/fonts/GmarketSansBold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+/* Preview only. No sizes, spacing, colors or layout properties are overridden. */
+.font-a { --archive-font: 'Wanted Sans Variable', sans-serif; --preview-heading: 'Wanted Sans Variable', sans-serif; }
+.font-b { --archive-font: 'Pretendard', sans-serif; --preview-heading: 'LINE Seed Sans KR', sans-serif; }
+.font-c { --archive-font: 'SUIT', sans-serif; --preview-heading: 'Gmarket Sans', sans-serif; }
+.font-d { --archive-font: 'SUIT', sans-serif; --preview-heading: 'SUIT', sans-serif; }
+.layout--font-preview :is(h1, h2, h3, h4, h5, h6, .site-title, .sidebar .author__name) { font-family: var(--preview-heading); }
+.layout--font-preview .sidebar .author__bio p { font-family: var(--archive-font); }
+.layout--font-preview :is(.page__content, .archive__item-excerpt, .archive__categories, .page__meta) { font-family: var(--archive-font); }
+.layout--font-preview :is(code, kbd, pre, .highlight) { font-family: 'JetBrains Mono', var(--archive-font); }

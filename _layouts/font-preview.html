@@ -1,0 +1,25 @@
+---
+layout: single
+---
+<p><a href="{{ '/font-comparison/' | relative_url }}" target="_top">폰트 비교 화면</a> · <span id="font-load-status" role="status">웹폰트 로딩 중…</span></p>
+<div class="entries-list">
+  <div class="list__item">
+    <article class="archive__item">
+      <div class="archive__categories"><a href="{{ '/category/development/' | relative_url }}">개발</a> · <a href="{{ '/category/ctf-wargame/' | relative_url }}">CTF/Wargame</a></div>
+      <h2 class="archive__item-title"><a href="#reading">HTTP 요청 분석과 웹 보안 — Request &amp; Response</a></h2>
+      <p class="page__meta"><time datetime="2026-11-07">2026.11.07</time></p>
+      <p class="archive__item-excerpt">개발과 보안을 공부하며 만나는 개념을 차근차근 정리합니다. API, 브라우저, 서버의 동작을 함께 살펴봅니다.</p>
+    </article>
+  </div>
+</div>
+<h2 id="reading">작은 기록에서 시작하는 Security Notes</h2>
+<p>HTTP 요청은 메서드, URL, 헤더와 본문으로 구성됩니다. 개발자 도구에서 Request와 Response를 비교하면 브라우저와 서버가 주고받는 정보를 이해하는 데 도움이 됩니다.</p>
+<p>한글과 영어가 섞인 문장에서 글자의 크기와 무게가 자연스럽게 이어지는지 살펴보세요. 인증(Authentication)과 인가(Authorization), 상태 코드 200·403·404, 경로 <code>/api/v1/posts</code>를 비교할 수 있습니다.</p>
+<h3>코드 읽기 — JavaScript</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre><code class="language-javascript">// 기록을 최신순으로 정렬합니다.
+const posts = [{ title: "개발 기록", date: "2026-11-07" }];
+const latest = posts.toSorted((a, b) =&gt;
+  new Date(b.date) - new Date(a.date)
+);
+console.log(latest[0].title);</code></pre></div></div>
+<p>코드는 네 시안 모두 JetBrains Mono를 사용합니다. 한글 주석은 각 시안의 본문 폰트로 표시됩니다.</p>

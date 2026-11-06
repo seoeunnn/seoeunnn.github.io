@@ -1,8 +1,6 @@
 main:
   - title: "Posts"
     url: /posts/
-  - title: "Categories"
-    url: /categories/
   - title: "Tags"
     url: /tags/
   - title: "About"
@@ -10,21 +8,22 @@ main:
 
 sidebar-category:
   - title: "Categories"
+    url: /categories/
     children:
       - title: "개발"
-        url: /categories/#개발
+        url: /category/development/
 
       - title: "CTF/Wargame"
-        url: /categories/#ctfwargame
+        url: /category/ctf-wargame/
 
       - title: "Bug Bounty"
-        url: /categories/#bug-bounty
+        url: /category/bug-bounty/
 
       - title: "블로그/기술문서"
-        url: /categories/#블로그기술문서
+        url: /category/tech-docs/
 
       - title: "논문/컨퍼런스"
-        url: /categories/#논문컨퍼런스
+        url: /category/papers-conferences/
 
       - title: "공모전/자격증"
-        url: /categories/#공모전자격증
+        url: /category/competitions-certifications/

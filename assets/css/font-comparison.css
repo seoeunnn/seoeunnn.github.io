@@ -1,0 +1,15 @@
+/* The comparison controls sit outside the unchanged blog viewport. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #FAF9F6; color: #343630; font-family: 'Pretendard', sans-serif; line-height: 1.6; }
+header { padding: 1rem 1.5rem; border-bottom: 1px solid #E4E0D7; }
+h1 { margin: 0 0 .4rem; color: #34402D; font-size: 1.25rem; }
+p { margin: .4rem 0; }
+form { display: flex; flex-wrap: wrap; align-items: end; gap: .75rem 1.5rem; margin-block: 1rem; }
+label { display: grid; gap: .25rem; }
+select { max-width: 100%; padding: .5rem; color: #343630; background: #FAF9F6; border: 1px solid #E4E0D7; font: inherit; }
+a { color: #65744E; text-underline-offset: .2em; }
+a:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid #65744E; outline-offset: 3px; }
+summary { cursor: pointer; }
+main { padding: 1rem; }
+iframe { display: block; width: 100%; max-width: 100%; height: 85vh; margin-inline: auto; border: 0; outline: 1px solid #E4E0D7; background: #FAF9F6; }
+@media (max-width: 480px) { header { padding: 1rem; } form { align-items: stretch; } label, select { width: 100%; } main { padding: .5rem; } }
