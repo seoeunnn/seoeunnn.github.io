@@ -140,13 +140,13 @@ a:hover, a:focus-visible,
 }
 .btn:hover, .btn:focus-visible { color: var(--archive-accent) !important; border-color: var(--archive-accent); }
 .search__toggle:hover, .search__toggle:focus-visible { color: var(--archive-accent); }
-/* Production titles include permalink anchors; keep these names charcoal in every state. */
+/* Production titles include anchors: charcoal at rest, olive on interaction. */
 .sidebar .author__name a,
 .sidebar .author__name a:hover,
 .sidebar .author__name a:focus-visible,
-.layout--single .page__title a,
+.layout--single .page__title a { color: var(--archive-text); }
 .layout--single .page__title a:hover,
-.layout--single .page__title a:focus-visible { color: var(--archive-text); }
+.layout--single .page__title a:focus-visible { color: var(--archive-accent); }
 
 @media (max-width: 63.9375em) {
   .sidebar { margin-bottom: 1.25rem; }
