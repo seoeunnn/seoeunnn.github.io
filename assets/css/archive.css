@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title,
 a, a:visited { color: var(--archive-accent); }
 h1, h2, h3, h4, h5, h6 { color: var(--archive-heading); }
 .sidebar .author__name, .sidebar .author__name a,
-.about-page .page__title { color: var(--archive-text); }
+.layout--single .page__title { color: var(--archive-text); }
 a { text-decoration-color: var(--archive-accent); text-underline-offset: .2em; }
 a:hover { text-decoration: underline; text-decoration-color: var(--archive-accent); }
 a:focus-visible, button:focus-visible, input:focus-visible, label:focus-visible {
@@ -144,9 +144,9 @@ a:hover, a:focus-visible,
 .sidebar .author__name a,
 .sidebar .author__name a:hover,
 .sidebar .author__name a:focus-visible,
-.about-page .page__title a,
-.about-page .page__title a:hover,
-.about-page .page__title a:focus-visible { color: var(--archive-text); }
+.layout--single .page__title a,
+.layout--single .page__title a:hover,
+.layout--single .page__title a:focus-visible { color: var(--archive-text); }
 
 @media (max-width: 63.9375em) {
   .sidebar { margin-bottom: 1.25rem; }
